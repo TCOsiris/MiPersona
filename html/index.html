@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Hobbies</title>
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <!-- Cuadro A -->
+        <div class="A">
+            <img src="../images/perfil.jpg" alt="">
+            <ul>
+                <h2 class="titulo">Miguel Angel Cano Triana</h2>
+                <p class="textTi">Ahora te voy a contar un poco sobre mí, a continuacion un poco de las actividades que
+                    me gusta hacer:</p>
+            </ul>
+
+        </div>
+
+        <!-- Cuadro UNO -->
+        <div class="UNO">
+            <h3>Deportes</h3>
+            <img src="../images/baloncesto.jpg" alt="" class="ima-small">
+            <img src="../images/futbol.jpg" alt="" class="ima-small">
+            <img src="../images/voleibol.png" alt="" class="ima-small">
+        </div>
+
+        <!-- Cuadro DOS -->
+        <div class="DOS">
+            <h3>Paseos</h3>
+            <img src="../images/paseo.jpg" alt="" class="ima-small">
+        </div>
+
+        <!-- Cuadro TRES -->
+        <div class="TRES">
+            <h3>Fiesta/Bailar</h3>
+            <img src="../images/fiesta.jpg" alt="" class="ima-small">
+        </div>
+
+
+       
+        <div class="CUATRO">
+            <h2>Ejercicio</h2>
+            <img src="../images/baloncesto.jpg" alt="" class="ima-small">
+        </div>
+
+        
+        <div class="e">
+            <h3>Mas de mí</h3>
+
+        </div>
+
+
+
+        <!-- Cuadro B -->
+        <div class="B">
+            <h2>Que quiero ser</h2>
+            <img src="../images/quieroser.jpg" alt="" class="ima-small">
+        </div>
+
+        <!-- Cuadro C -->
+        <div class="C">
+            <h2>Donde vivo</h2>
+            <h4>Vivo en Florencia, Caquetá en el barrio chapinero</h4>
+        </div>
+
+        <!-- Cuadro D -->
+        <div class="D">
+            <h2>Contacta conmigo</h2>
+            <h4>Correo: <a href="mailto:juanpablo.lopez@">mailto:juanpablo.lopez@</a></h4>
+            <h4>Telefono: <a href="3138922451">3138922451</a></h4>
+            <h4>Instagram: <a href="3138922451">Metesaca45@</a></h4>
+
+        
+        </div>
+
+
+
+    </div>
+    <script>
+        document.getElementById('imagen1').addEventListener('click', function() {
+            cargarEstilo('../css/styles-cambio1.css');
+        });
+
+        document.getElementById('imagen2').addEventListener('click', function() {
+            cargarEstilo('../css/styles-cambio2.css');
+        });
+
+        function cargarEstilo(url) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = url;
+            document.head.appendChild(link);
+        }
+    </script>
+</body>
+
+</html>
