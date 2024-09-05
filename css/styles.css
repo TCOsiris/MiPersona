@@ -1,20 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
-.titulo{
+
+.titulo {
     font-size: 60px;
 }
-.textTi{
+
+.textTi {
     font-size: 38px;
 }
 
 .contenedor {
     display: grid;
     grid-template-areas:
-        
+
         "A A A A"
         "UNO DOS TRES CUATRO"
         "B B B B"
@@ -29,7 +31,36 @@
     padding: 20px;
     background-color: #555;
 }
-.A{
+
+.cambio_Futbol {
+    .contenedor {
+        background-image: url("../images/images_futbol/estadio.png");
+    }
+
+    .UNO,
+    .DOS,
+    .TRES,
+    .CUATRO,
+    .A,
+    .B,
+    .C,
+    .D,
+    .e {
+       
+        background-image: url("../images/images_futbol/cesped.jpg");
+        
+
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,p {
+        color: #fff;
+    }
+}
+
+.A {
     grid-area: A;
     background-color: #9d8383;
     padding: 2px;
@@ -38,78 +69,119 @@
     display: flex;
     border: #9d8383;
 }
-.B{
+
+.B {
     grid-area: B;
-background-color: bisque;
+    background-color: bisque;
     border-radius: 8px;
-   
+
     border: #9d8383;
 }
-.C{
+
+.C {
     grid-area: C;
     background-color: bisque;
     border-radius: 8px;
-   
+
     border: #9d8383;
 }
-.contenedor{
-    
+
+.contenedor {
+
     grid-template-columns: repeat(4, 1fr);
 }
-.UNO{
-    flex: 1;
+
+.UNO {
     grid-area: UNO;
-    flex:3;
     background-color: bisque;
     border-radius: 8px;
-    
+
     border: #9d8383;
 }
-.UNO:hover{
+
+
+.DOS,
+.TRES,
+.CUATRO {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.DOS img,
+.TRES img,
+.CUATRO img {
+    max-width: 100%;
+    height: auto;
+}
+
+.UNO:hover {
     flex: auto;
 }
-.CUATRO{
+
+.CUATRO {
     grid-area: CUATRO;
     background-color: bisque;
     border-radius: 8px;
     border: #9d8383;
-    justify-content: center;
+
+
 }
-.TRES{
+
+.TRES {
     grid-area: TRES;
     background-color: bisque;
     border-radius: 8px;
     justify-content: center;
     border: #9d8383;
 }
-.D{
+
+.D {
     grid-area: D;
     background-color: bisque;
     border-radius: 8px;
-    
+
     border: #9d8383;
 }
-.DOS{
+
+.DOS {
     grid-template-columns: repeat(4, 1fr);
     border-radius: 8px;
     border: #9d8383;
     background-color: bisque;
     justify-content: center;
 }
+
 .ima-small:hover {
-    flex: 5;
     cursor: pointer;
-    /* flex:1; */
-    /* transform: scale(2); */
-    /* border-radius: 500px; */
-    /* width: 150px; 
-    height: 120px; */
+    flex: auto;
+    transform: scale(2);
+    border-radius: 500px;
+    width: 150px;
+    height: 120px;
+    max-width: 150px;
+    margin-left: 20px;
+    object-fit: cover;
+    border: 2px solid #fff;
 }
-.e{
+
+.ima-small {
+    max-width: 150px;
+    border-radius: 15px;
+    margin-left: 30px;
+    object-fit: cover;
+    border: 2px solid #fff;
+
+}
+
+.e {
     grid-area: E;
     background-color: bisque;
     border-radius: 8px;
-    
+
     border: #9d8383;
 }
 
@@ -132,7 +204,7 @@ background-color: bisque;
     .contenedor {
         display: grid;
         grid-template-areas:
-            
+
             "A A A A"
             "UNO UNO UNO UNO"
             "DOS DOS DOS DOS"
@@ -175,14 +247,14 @@ background-color: bisque;
     }
 
 
-    
+
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
     .contenedor {
         display: grid;
         grid-template-areas:
-            
+
             "A A A A"
             "UNO UNO DOS DOS"
             "UNO UNO DOS DOS"
@@ -220,6 +292,3 @@ background-color: bisque;
         width: 50px;
     }
 }
-
-
-    
